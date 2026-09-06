@@ -1,0 +1,3113 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎀 Happy Birthday Saloni! 🎂</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    color: #392c3d;
+    background:
+        radial-gradient(circle at 10% 20%, #ffdce9 0 7%, transparent 8%),
+        radial-gradient(circle at 90% 10%, #ddd5ff 0 7%, transparent 8%),
+        linear-gradient(135deg, #fff5f9, #f7f2ff, #eefaff);
+    overflow-x: hidden;
+}
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+    --pink: #ff6f9c;
+    --pink-light: #ffd6e4;
+    --purple: #8e76eb;
+    --purple-light: #e3dcff;
+    --yellow: #ffd75e;
+    --dark: #392c3d;
+    --white: #ffffff;
+}
+
+/* =====================================================
+   LOADING SCREEN
+===================================================== */
+
+#loading {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff3f8;
+
+    transition: opacity .8s ease;
+}
+
+.loader {
+    text-align: center;
+}
+
+.loader-penguin {
+    font-size: 90px;
+    animation: loaderBounce 1s infinite alternate;
+}
+
+.loader h2 {
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+.loader p {
+    margin-top: 8px;
+    color: #8a788e;
+}
+
+.loader-bar {
+    width: 230px;
+    height: 11px;
+
+    background: #ffd9e7;
+
+    border-radius: 50px;
+
+    margin: 20px auto;
+
+    overflow: hidden;
+}
+
+.loader-fill {
+    width: 0;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #ff719d,
+        #987fff
+    );
+
+    animation: loading 2.2s forwards;
+}
+
+@keyframes loading {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes loaderBounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-18px) rotate(5deg);
+    }
+}
+
+/* =====================================================
+   FLOATING BACKGROUND
+===================================================== */
+
+#floatingContainer {
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.floating {
+    position: absolute;
+
+    bottom: -50px;
+
+    animation:
+        floatingUp linear infinite;
+
+    opacity: .6;
+}
+
+@keyframes floatingUp {
+
+    from {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            translateY(-115vh)
+            rotate(360deg);
+    }
+}
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-btn {
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px rgba(80,40,100,.15);
+
+    cursor: pointer;
+
+    font-size: 23px;
+
+    z-index: 9000;
+
+    transition: .3s;
+}
+
+.music-btn:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section {
+    position: relative;
+    z-index: 2;
+
+    min-height: 100vh;
+
+    padding: 90px 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: var(--pink);
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 30px rgba(90,50,100,.1);
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: "Pacifico", cursive;
+
+    font-size:
+        clamp(48px, 10vw, 105px);
+
+    line-height: 1.15;
+
+    color: var(--pink);
+
+    text-shadow:
+        5px 5px 0 #ffd6e5;
+}
+
+.hero h1 span {
+    color: var(--purple);
+}
+
+.hero-subtitle {
+    max-width: 650px;
+
+    margin: 25px auto;
+
+    font-size:
+        clamp(18px, 3vw, 24px);
+
+    line-height: 1.6;
+}
+
+.date {
+    display: inline-block;
+
+    background: white;
+
+    padding: 13px 25px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 30px rgba(80,50,100,.1);
+}
+
+.penguin {
+    display: block;
+
+    font-size: 130px;
+
+    margin: 30px auto 5px;
+
+    cursor: pointer;
+
+    width: fit-content;
+
+    animation: penguinDance 2s infinite;
+}
+
+@keyframes penguinDance {
+
+    0%,100% {
+        transform:
+            rotate(-5deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(5deg)
+            translateY(-15px);
+    }
+}
+
+.penguin:hover {
+    transform: scale(1.15);
+}
+
+.hero-hint {
+    color: #85758a;
+
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.primary-btn {
+    border: none;
+
+    cursor: pointer;
+
+    padding: 16px 30px;
+
+    border-radius: 50px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff709d,
+            #987bff
+        );
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 12px 30px rgba(170,90,160,.25);
+
+    transition: .3s;
+}
+
+.primary-btn:hover {
+    transform:
+        translateY(-5px)
+        scale(1.03);
+}
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+.time-box {
+    background: white;
+
+    padding: 12px 18px;
+
+    border-radius: 18px;
+
+    min-width: 70px;
+
+    box-shadow:
+        0 8px 25px rgba(80,50,100,.08);
+}
+
+.time-box strong {
+    display: block;
+
+    color: var(--pink);
+
+    font-size: 24px;
+}
+
+.time-box small {
+    color: #85758a;
+}
+
+/* =====================================================
+   COMMON TITLES
+===================================================== */
+
+.section-title {
+    font-family: "Pacifico", cursive;
+
+    color: var(--purple);
+
+    font-size:
+        clamp(38px, 7vw, 68px);
+
+    margin-bottom: 15px;
+}
+
+.section-description {
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+/* =====================================================
+   GIFT SECTION
+===================================================== */
+
+.gift-section {
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.gift {
+    width: 200px;
+    height: 170px;
+
+    position: relative;
+
+    margin: 50px auto 35px;
+
+    cursor: pointer;
+
+    transition: .4s;
+}
+
+.gift:hover {
+    transform:
+        translateY(-12px)
+        rotate(-3deg);
+}
+
+.gift-box {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 200px;
+    height: 120px;
+
+    background: #ff83aa;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 35px rgba(90,50,100,.15);
+}
+
+.gift-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 36px;
+    height: 120px;
+
+    left: 82px;
+
+    background: #ffd45d;
+}
+
+.gift-lid {
+    position: absolute;
+
+    left: -10px;
+    top: 30px;
+
+    width: 220px;
+    height: 40px;
+
+    background: #ff6798;
+
+    border-radius: 9px;
+
+    z-index: 3;
+
+    transition: .7s;
+}
+
+.gift-lid::after {
+    content: "";
+
+    position: absolute;
+
+    width: 36px;
+    height: 40px;
+
+    left: 92px;
+
+    background: #ffd45d;
+}
+
+.gift-bow {
+    position: absolute;
+
+    top: -18px;
+    left: 70px;
+
+    font-size: 58px;
+
+    z-index: 4;
+}
+
+.gift.open .gift-lid {
+    transform:
+        translateY(-90px)
+        rotate(-8deg);
+}
+
+.gift.open {
+    animation: giftPop .7s;
+}
+
+@keyframes giftPop {
+
+    40% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hidden-message {
+    display: none;
+
+    max-width: 700px;
+
+    padding: 35px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255,255,255,.8);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 60px rgba(80,40,100,.12);
+
+    animation: popIn .5s;
+}
+
+.hidden-message.show {
+    display: block;
+}
+
+.hidden-message h2 {
+    color: var(--pink);
+
+    font-family: "Pacifico", cursive;
+
+    font-size: 38px;
+}
+
+.hidden-message p {
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    margin: 15px 0 25px;
+}
+
+@keyframes popIn {
+
+    from {
+        opacity: 0;
+        transform: scale(.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* =====================================================
+   AWESOME CARDS
+===================================================== */
+
+.cards-section {
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.cards {
+    width: min(1000px, 100%);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(210px, 1fr)
+        );
+
+    gap: 22px;
+
+    margin: 40px auto;
+}
+
+.card {
+    padding: 30px 20px;
+
+    background:
+        rgba(255,255,255,.72);
+
+    backdrop-filter: blur(15px);
+
+    border:
+        2px solid
+        rgba(255,255,255,.8);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 40px rgba(70,40,90,.08);
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+.card:hover {
+    transform:
+        translateY(-12px)
+        rotate(1deg);
+}
+
+.card .emoji {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: var(--pink);
+
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* =====================================================
+   POLAROID PHOTO SECTION
+===================================================== */
+
+.photo-section {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding-top: 100px;
+
+    overflow: hidden;
+}
+
+.photo-heading {
+    margin-bottom: 45px;
+}
+
+.camera {
+    font-size: 45px;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    animation:
+        cameraBounce 2s infinite;
+}
+
+@keyframes cameraBounce {
+
+    0%,100% {
+        transform:
+            rotate(-5deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(5deg)
+            translateY(-10px);
+    }
+}
+
+.polaroid-gallery {
+    width: min(1000px, 100%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 38px;
+
+    margin-bottom: 60px;
+}
+
+.polaroid {
+    position: relative;
+
+    width: 215px;
+
+    padding:
+        12px
+        12px
+        25px;
+
+    background: white;
+
+    box-shadow:
+        0 14px 30px
+        rgba(60,40,70,.15);
+
+    cursor: pointer;
+
+    transition:
+        transform .4s,
+        box-shadow .4s;
+
+    user-select: none;
+}
+
+.polaroid::before {
+    content: "";
+
+    position: absolute;
+
+    width: 70px;
+    height: 20px;
+
+    left: 50%;
+    top: -10px;
+
+    transform:
+        translateX(-50%)
+        rotate(-2deg);
+
+    background:
+        rgba(255,220,150,.8);
+
+    z-index: 5;
+}
+
+.polaroid::after {
+    content: "♡";
+
+    position: absolute;
+
+    right: -13px;
+    bottom: -17px;
+
+    font-size: 38px;
+
+    color: #ff78a4;
+
+    transition: .3s;
+}
+
+.polaroid:hover::after {
+    transform:
+        scale(1.2)
+        rotate(15deg);
+}
+
+.p1 {
+    transform: rotate(-7deg);
+}
+
+.p2 {
+    transform:
+        rotate(5deg)
+        translateY(10px);
+}
+
+.p3 {
+    transform:
+        rotate(-3deg)
+        translateY(-5px);
+}
+
+.p4 {
+    transform:
+        rotate(8deg)
+        translateY(12px);
+}
+
+.polaroid:hover {
+    transform:
+        rotate(0deg)
+        translateY(-18px)
+        scale(1.08);
+
+    box-shadow:
+        0 28px 55px
+        rgba(60,40,70,.23);
+
+    z-index: 10;
+}
+
+.photo-frame {
+    width: 100%;
+    height: 205px;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .5s;
+}
+
+.polaroid:hover img {
+    transform: scale(1.08);
+}
+
+.caption {
+    padding-top: 15px;
+
+    font-family: "Pacifico", cursive;
+
+    color: #554457;
+
+    font-size: 18px;
+}
+
+/* =====================================================
+   PHOTO LIGHTBOX
+===================================================== */
+
+.photo-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background:
+        rgba(30,20,35,.9);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 50000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s;
+}
+
+.photo-lightbox.show {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.photo-lightbox img {
+    max-width: 88vw;
+    max-height: 75vh;
+
+    padding:
+        15px
+        15px
+        55px;
+
+    background: white;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.4);
+
+    transform:
+        rotate(-2deg)
+        scale(.8);
+
+    transition: .4s;
+}
+
+.photo-lightbox.show img {
+    transform:
+        rotate(-2deg)
+        scale(1);
+}
+
+#largeCaption {
+    margin-top: -40px;
+
+    z-index: 5;
+
+    color: white;
+
+    font-family: "Pacifico", cursive;
+
+    font-size: 24px;
+}
+
+.close-photo {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: var(--pink);
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.close-photo:hover {
+    transform: rotate(90deg);
+}
+
+/* =====================================================
+   CAKE
+===================================================== */
+
+.cake-section {
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.cake {
+    position: relative;
+
+    width: 270px;
+    height: 250px;
+
+    margin: 45px auto;
+}
+
+.cake-base {
+    position: absolute;
+
+    left: 15px;
+    bottom: 20px;
+
+    width: 240px;
+    height: 105px;
+
+    background: #ff91b3;
+
+    border-radius:
+        15px
+        15px
+        25px
+        25px;
+
+    box-shadow:
+        inset
+        0 -20px
+        rgba(200,70,120,.1);
+}
+
+.cake-base::before {
+    content: "";
+
+    position: absolute;
+
+    left: 15px;
+    top: -30px;
+
+    width: 210px;
+    height: 55px;
+
+    background: #fff3fa;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 10px #ffb2c9;
+}
+
+.cake-base::after {
+    content: "🍓  🍓  🍓";
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 48px;
+
+    font-size: 24px;
+}
+
+.candle {
+    position: absolute;
+
+    bottom: 125px;
+
+    width: 14px;
+    height: 62px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            white 0 8px,
+            #9279ef 8px 16px
+        );
+
+    border-radius: 5px;
+
+    z-index: 3;
+}
+
+.candle:nth-child(1) {
+    left: 78px;
+}
+
+.candle:nth-child(2) {
+    left: 128px;
+}
+
+.candle:nth-child(3) {
+    left: 178px;
+}
+
+.flame {
+    position: absolute;
+
+    top: -27px;
+    left: -5px;
+
+    font-size: 24px;
+
+    animation:
+        flame 0.6s infinite alternate;
+}
+
+@keyframes flame {
+
+    from {
+        transform:
+            scale(1)
+            rotate(-5deg);
+    }
+
+    to {
+        transform:
+            scale(1.2)
+            rotate(5deg);
+    }
+}
+
+.wish-text {
+    margin-top: 25px;
+
+    min-height: 35px;
+
+    font-size: 20px;
+}
+
+/* =====================================================
+   BALLOONS
+===================================================== */
+
+.balloon-section {
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.balloon-area {
+    position: relative;
+
+    width: min(850px, 100%);
+
+    height: 450px;
+
+    margin: 30px auto 10px;
+}
+
+.balloon {
+    position: absolute;
+
+    width: 82px;
+    height: 105px;
+
+    border-radius:
+        50%
+        50%
+        48%
+        48%;
+
+    cursor: pointer;
+
+    animation:
+        balloonFloat 3s
+        ease-in-out infinite;
+
+    transition: .2s;
+}
+
+.balloon::before {
+    content: "";
+
+    position: absolute;
+
+    bottom: -8px;
+    left: 35px;
+
+    border-left:
+        6px solid transparent;
+
+    border-right:
+        6px solid transparent;
+
+    border-top:
+        10px solid currentColor;
+}
+
+.balloon::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -120px;
+    left: 40px;
+
+    width: 2px;
+    height: 120px;
+
+    background: #777;
+}
+
+.balloon:hover {
+    transform: scale(1.15);
+}
+
+.balloon.popped {
+    animation:
+        balloonPop .35s forwards;
+}
+
+@keyframes balloonFloat {
+
+    0%,100% {
+        transform:
+            translateY(0)
+            rotate(-2deg);
+    }
+
+    50% {
+        transform:
+            translateY(-20px)
+            rotate(2deg);
+    }
+}
+
+@keyframes balloonPop {
+
+    to {
+        transform:
+            scale(1.8);
+
+        opacity: 0;
+    }
+}
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+.final-section {
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.final-card {
+    width: min(760px, 100%);
+
+    padding: 60px 30px;
+
+    border-radius: 40px;
+
+    background:
+        rgba(255,255,255,.82);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 25px 70px
+        rgba(70,40,90,.12);
+}
+
+.big-penguin {
+    font-size: 100px;
+
+    animation:
+        loaderBounce 1.2s infinite alternate;
+}
+
+.final-card h2 {
+    font-family: "Pacifico", cursive;
+
+    color: var(--pink);
+
+    font-size:
+        clamp(42px, 8vw, 75px);
+}
+
+.final-card p {
+    margin: 25px 0;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+.final-highlight {
+    color: var(--pink);
+
+    font-weight: 600;
+}
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti {
+    position: fixed;
+
+    top: -30px;
+
+    width: 10px;
+    height: 16px;
+
+    z-index: 60000;
+
+    animation:
+        confettiFall
+        linear
+        forwards;
+}
+
+@keyframes confettiFall {
+
+    to {
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+    }
+}
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+.toast {
+    position: fixed;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    z-index: 70000;
+
+    padding: 20px 28px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.2);
+
+    font-size: 19px;
+
+    text-align: center;
+
+    animation: popIn .4s;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width: 650px) {
+
+    section {
+        padding:
+            70px 15px;
+    }
+
+    .penguin {
+        font-size: 100px;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .card {
+        padding: 22px 12px;
+    }
+
+    .card .emoji {
+        font-size: 40px;
+    }
+
+    .polaroid-gallery {
+        gap: 25px;
+    }
+
+    .polaroid {
+        width: 170px;
+    }
+
+    .photo-frame {
+        height: 165px;
+    }
+
+    .caption {
+        font-size: 15px;
+    }
+
+    .balloon-area {
+        height: 410px;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .polaroid {
+        width: 145px;
+    }
+
+    .photo-frame {
+        height: 140px;
+    }
+
+    .caption {
+        font-size: 13px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     LOADING
+===================================================== -->
+
+<div id="loading">
+
+    <div class="loader">
+
+        <div class="loader-penguin">
+            🐧
+        </div>
+
+        <h2>
+            Preparing Saloni's surprise...
+        </h2>
+
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+
+        <p>
+            Shhh... it's a secret 🤫
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<audio id="birthdaySong" loop preload="auto">
+
+    <!--
+        Put your song here:
+
+        birthday-website/
+        ├── index.html
+        └── assets/
+            └── birthday-song.mp3
+    -->
+
+    <source
+        src="assets/birthday-song.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+<button
+    class="music-btn"
+    id="musicBtn">
+
+    🔇
+
+</button>
+
+
+<!-- =====================================================
+     FLOATING DECORATION
+===================================================== -->
+
+<div id="floatingContainer"></div>
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            🎀 A VERY IMPORTANT MESSAGE 🎀
+        </div>
+
+        <h1>
+            Hey <span>Saloni!</span> 🥳
+        </h1>
+
+        <p class="hero-subtitle">
+
+            Someone secretly prepared
+            a tiny birthday surprise
+            just for you... 👀✨
+
+        </p>
+
+        <div class="date">
+
+            🎂 07 September 🎂
+
+        </div>
+
+
+        <div
+            class="penguin"
+            id="penguin">
+
+            🐧
+
+        </div>
+
+        <p class="hero-hint">
+
+            👆 Psst... the penguin knows something!
+
+        </p>
+
+
+        <button
+            class="primary-btn"
+            onclick="startSurprise()">
+
+            🎁 Start My Surprise
+
+        </button>
+
+
+        <div
+            class="countdown"
+            id="countdown">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GIFT
+===================================================== -->
+
+<section
+    class="gift-section"
+    id="giftSection">
+
+    <h2 class="section-title">
+
+        Wait... There's a Gift! 🎁
+
+    </h2>
+
+    <p class="section-description">
+
+        Okay, technically it's not a real gift
+        because I'm terrible at wrapping presents... 😂
+
+        <br>
+
+        But click the box anyway. 👀
+
+    </p>
+
+
+    <div
+        class="gift"
+        id="gift"
+        onclick="openGift()">
+
+        <div class="gift-bow">
+            🎀
+        </div>
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-box"></div>
+
+    </div>
+
+
+    <div
+        class="hidden-message"
+        id="giftMessage">
+
+        <h2>
+            SURPRISE!!! 🎉
+        </h2>
+
+        <p>
+
+            Happy Birthdayyy, Saloni! 🥳💗
+
+            <br><br>
+
+            You're officially one year more
+            experienced at being awesome. 😂
+
+            <br><br>
+
+            May your day be filled with cake,
+            laughter, good food, zero stress,
+            and absolutely NO boring moments. ✨
+
+        </p>
+
+        <button
+            class="primary-btn"
+            onclick="scrollToSection('awesome')">
+
+            There's more 👀 →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AWESOME CARDS
+===================================================== -->
+
+<section
+    class="cards-section"
+    id="awesome">
+
+    <h2 class="section-title">
+
+        Why Saloni is Awesome 🌷
+
+    </h2>
+
+    <p class="section-description">
+
+        Some completely scientific
+        and definitely unbiased reasons:
+
+    </p>
+
+
+    <div class="cards">
+
+
+        <div
+            class="card"
+            onclick="cardClick(this)">
+
+            <div class="emoji">
+                😂
+            </div>
+
+            <h3>
+                Fun Energy
+            </h3>
+
+            <p>
+                Somehow you can turn
+                normal moments into funny ones.
+            </p>
+
+        </div>
+
+
+        <div
+            class="card"
+            onclick="cardClick(this)">
+
+            <div class="emoji">
+                🌸
+            </div>
+
+            <h3>
+                Good Vibes
+            </h3>
+
+            <p>
+                Your presence automatically makes
+                things a little more cheerful.
+            </p>
+
+        </div>
+
+
+        <div
+            class="card"
+            onclick="cardClick(this)">
+
+            <div class="emoji">
+                🫶
+            </div>
+
+            <h3>
+                Kind Heart
+            </h3>
+
+            <p>
+                You deserve all the happiness
+                coming your way.
+            </p>
+
+        </div>
+
+
+        <div
+            class="card"
+            onclick="cardClick(this)">
+
+            <div class="emoji">
+                ✨
+            </div>
+
+            <h3>
+                Simply You
+            </h3>
+
+            <p>
+                No complicated explanation needed.
+                You're just pretty awesome.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="primary-btn"
+        onclick="scrollToSection('photos')">
+
+        📸 There's a photo corner!
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     POLAROID PHOTO GALLERY
+===================================================== -->
+
+<section
+    class="photo-section"
+    id="photos">
+
+
+    <div class="photo-heading">
+
+        <span class="camera">
+            📸
+        </span>
+
+        <h2 class="section-title">
+
+            Saloni's Cute Corner 🌸
+
+        </h2>
+
+        <p class="section-description">
+
+            A tiny collection of the birthday
+            girl's cutest moments ✨
+
+        </p>
+
+    </div>
+
+
+    <div class="polaroid-gallery">
+
+
+        <!-- PHOTO 1 -->
+
+        <div
+            class="polaroid p1"
+            onclick="openPhoto(this)">
+
+            <div class="photo-frame">
+
+                <img
+                    src="assets/saloni1.jpg"
+                    alt="Saloni">
+
+            </div>
+
+            <div class="caption">
+
+                Cutie alert! 🎀
+
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 2 -->
+
+        <div
+            class="polaroid p2"
+            onclick="openPhoto(this)">
+
+            <div class="photo-frame">
+
+                <img
+                    src="assets/saloni2.jpg"
+                    alt="Saloni">
+
+            </div>
+
+            <div class="caption">
+
+                Pretty vibes 🌸
+
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 3 -->
+
+        <div
+            class="polaroid p3"
+            onclick="openPhoto(this)">
+
+            <div class="photo-frame">
+
+                <img
+                    src="assets/saloni3.jpg"
+                    alt="Saloni">
+
+            </div>
+
+            <div class="caption">
+
+                Birthday girl ✨
+
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 4 -->
+
+        <div
+            class="polaroid p4"
+            onclick="openPhoto(this)">
+
+            <div class="photo-frame">
+
+                <img
+                    src="assets/saloni4.jpg"
+                    alt="Saloni">
+
+            </div>
+
+            <div class="caption">
+
+                Main character energy 🦋
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <button
+        class="primary-btn"
+        onclick="scrollToSection('cake')">
+
+        Okay, enough photos 😂 →
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     PHOTO LIGHTBOX
+===================================================== -->
+
+<div
+    class="photo-lightbox"
+    id="photoLightbox"
+    onclick="closePhoto()">
+
+
+    <button
+        class="close-photo"
+        onclick="closePhoto()">
+
+        ×
+
+    </button>
+
+
+    <img
+        id="largePhoto"
+        src=""
+        alt="Saloni">
+
+
+    <div id="largeCaption"></div>
+
+</div>
+
+
+<!-- =====================================================
+     CAKE
+===================================================== -->
+
+<section
+    class="cake-section"
+    id="cake">
+
+
+    <h2 class="section-title">
+
+        Birthday Cake Time! 🎂
+
+    </h2>
+
+
+    <p class="section-description">
+
+        Make a wish and blow out
+        the candles... 💨✨
+
+    </p>
+
+
+    <div class="cake">
+
+
+        <div class="candle">
+
+            <div class="flame">
+                🔥
+            </div>
+
+        </div>
+
+
+        <div class="candle">
+
+            <div class="flame">
+                🔥
+            </div>
+
+        </div>
+
+
+        <div class="candle">
+
+            <div class="flame">
+                🔥
+            </div>
+
+        </div>
+
+
+        <div class="cake-base"></div>
+
+    </div>
+
+
+    <button
+        class="primary-btn"
+        onclick="blowCandles()">
+
+        💨 Blow Candles
+
+    </button>
+
+
+    <p
+        class="wish-text"
+        id="wishText">
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     BALLOONS
+===================================================== -->
+
+<section
+    class="balloon-section"
+    id="balloons">
+
+
+    <h2 class="section-title">
+
+        Pop the Birthday Balloons 🎈
+
+    </h2>
+
+
+    <p class="section-description">
+
+        Every balloon contains
+        a tiny birthday wish.
+
+        <br>
+
+        Pop them all! 👀
+
+    </p>
+
+
+    <div
+        class="balloon-area"
+        id="balloonArea">
+
+    </div>
+
+
+    <button
+        class="primary-btn"
+        onclick="scrollToSection('final')">
+
+        🎉 I found the final surprise
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section
+    class="final-section"
+    id="final">
+
+
+    <div class="final-card">
+
+
+        <div class="big-penguin">
+
+            🐧
+
+        </div>
+
+
+        <h2>
+
+            Happy Birthday, Saloni! 🎂
+
+        </h2>
+
+
+        <p>
+
+            Hope your birthday is as cute,
+            chaotic, fun and wonderful
+            as you are. 🌸✨
+
+        </p>
+
+
+        <p>
+
+            Keep smiling,
+            keep laughing,
+            keep being yourself,
+
+            <br>
+
+            and please eat an unreasonable
+            amount of cake today. 😂🍰
+
+        </p>
+
+
+        <p>
+
+            Here's to another year of
+            good moments, success,
+            happiness and lots of fun! 🥳
+
+        </p>
+
+
+        <p class="final-highlight">
+
+            Have the BEST birthday ever,
+            Saloni! 💗🎀
+
+        </p>
+
+
+        <button
+            class="primary-btn"
+            onclick="celebrate()">
+
+            🎉 One Last Surprise!
+
+        </button>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<script>
+
+/* =====================================================
+   SETTINGS
+===================================================== */
+
+const birthdayName = "Saloni";
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        const loading =
+            document.getElementById("loading");
+
+        loading.style.opacity = "0";
+
+        setTimeout(() => {
+
+            loading.style.display = "none";
+
+        }, 800);
+
+    }, 2400);
+
+});
+
+
+/* =====================================================
+   MUSIC
+===================================================== */
+
+const song =
+    document.getElementById("birthdaySong");
+
+const musicBtn =
+    document.getElementById("musicBtn");
+
+let musicPlaying = false;
+
+
+function startMusic() {
+
+    song.volume = .45;
+
+    song.play()
+        .then(() => {
+
+            musicPlaying = true;
+
+            musicBtn.innerText = "🎵";
+
+        })
+        .catch(() => {
+
+            console.log(
+                "Music could not start."
+            );
+
+        });
+
+}
+
+
+musicBtn.addEventListener(
+    "click",
+    () => {
+
+        if (musicPlaying) {
+
+            song.pause();
+
+            musicPlaying = false;
+
+            musicBtn.innerText = "🔇";
+
+            showToast(
+                "Music paused 🎵"
+            );
+
+        } else {
+
+            song.play()
+                .then(() => {
+
+                    musicPlaying = true;
+
+                    musicBtn.innerText = "🎵";
+
+                    showToast(
+                        "Birthday vibes ON! 🎶✨"
+                    );
+
+                })
+                .catch(() => {
+
+                    showToast(
+                        "Click Start My Surprise first 🎵"
+                    );
+
+                });
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   START SURPRISE
+===================================================== */
+
+function startSurprise() {
+
+    startMusic();
+
+    createConfetti(100);
+
+    setTimeout(() => {
+
+        scrollToSection(
+            "giftSection"
+        );
+
+    }, 700);
+
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+function openGift() {
+
+    const gift =
+        document.getElementById("gift");
+
+    const message =
+        document.getElementById("giftMessage");
+
+
+    if (
+        gift.classList.contains("open")
+    ) {
+
+        return;
+
+    }
+
+
+    gift.classList.add("open");
+
+    message.classList.add("show");
+
+    createConfetti(80);
+
+    playPopSound();
+
+}
+
+
+/* =====================================================
+   CARD CLICK
+===================================================== */
+
+function cardClick(card) {
+
+    card.style.transform =
+        `scale(1.08)
+         rotate(${Math.random()*8-4}deg)`;
+
+
+    createMiniHearts();
+
+
+    setTimeout(() => {
+
+        card.style.transform = "";
+
+    }, 500);
+
+}
+
+
+/* =====================================================
+   CAKE
+===================================================== */
+
+function blowCandles() {
+
+    const flames =
+        document.querySelectorAll(".flame");
+
+
+    flames.forEach(
+        flame => {
+
+            flame.style.display =
+                "none";
+
+        }
+    );
+
+
+    document.getElementById(
+        "wishText"
+    ).innerHTML =
+
+        "✨ Wish granted! May this year bring Saloni LOTS of happiness! 🌸💗";
+
+
+    createConfetti(100);
+
+    playPopSound();
+
+}
+
+
+/* =====================================================
+   BALLOONS
+===================================================== */
+
+const balloonMessages = [
+
+    "You deserve all the happiness! 💗",
+
+    "Never stop smiling! 🌸",
+
+    "Keep being awesome! ✨",
+
+    "More cake. Less stress. 😂",
+
+    "May all your wishes come true! 🌟",
+
+    "Have the most amazing year! 🎉",
+
+    "You are officially AWESOME! 🫶",
+
+    "Happy Birthday, Saloni! 🥳"
+
+];
+
+
+const balloonPositions = [
+
+    [8, 10],
+
+    [28, 4],
+
+    [50, 15],
+
+    [72, 5],
+
+    [88, 20],
+
+    [18, 50],
+
+    [42, 55],
+
+    [65, 48]
+
+];
+
+
+function createBalloons() {
+
+    const area =
+        document.getElementById(
+            "balloonArea"
+        );
+
+
+    balloonMessages.forEach(
+        (message, index) => {
+
+            const balloon =
+                document.createElement(
+                    "div"
+                );
+
+
+            balloon.className =
+                "balloon";
+
+
+            balloon.style.left =
+                balloonPositions[index][0]
+                + "%";
+
+
+            balloon.style.top =
+                balloonPositions[index][1]
+                + "%";
+
+
+            const hue =
+                Math.random() * 360;
+
+
+            balloon.style.background =
+                `hsl(${hue},80%,75%)`;
+
+
+            balloon.style.color =
+                `hsl(${hue},50%,50%)`;
+
+
+            balloon.style.animationDelay =
+                Math.random() * 1.5
+                + "s";
+
+
+            balloon.addEventListener(
+                "click",
+                () => {
+
+                    if (
+                        balloon.classList.contains(
+                            "popped"
+                        )
+                    ) {
+                        return;
+                    }
+
+
+                    balloon.classList.add(
+                        "popped"
+                    );
+
+
+                    showToast(
+                        message
+                    );
+
+
+                    createConfetti(15);
+
+                }
+            );
+
+
+            area.appendChild(
+                balloon
+            );
+
+        }
+    );
+
+}
+
+
+createBalloons();
+
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+function showToast(message) {
+
+    const oldToast =
+        document.querySelector(
+            ".toast"
+        );
+
+
+    if (oldToast) {
+        oldToast.remove();
+    }
+
+
+    const toast =
+        document.createElement(
+            "div"
+        );
+
+
+    toast.className = "toast";
+
+    toast.innerText = message;
+
+
+    document.body.appendChild(
+        toast
+    );
+
+
+    setTimeout(() => {
+
+        toast.remove();
+
+    }, 1800);
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function createConfetti(amount = 40) {
+
+    for (
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+        const piece =
+            document.createElement(
+                "div"
+            );
+
+
+        piece.className =
+            "confetti";
+
+
+        piece.style.left =
+            Math.random() * 100
+            + "vw";
+
+
+        piece.style.background =
+            `hsl(${Math.random()*360},
+                 80%,
+                 65%)`;
+
+
+        piece.style.animationDuration =
+            2 + Math.random() * 3
+            + "s";
+
+
+        piece.style.animationDelay =
+            Math.random() * .8
+            + "s";
+
+
+        document.body.appendChild(
+            piece
+        );
+
+
+        setTimeout(() => {
+
+            piece.remove();
+
+        }, 6000);
+
+    }
+
+}
+
+
+/* =====================================================
+   MINI HEARTS
+===================================================== */
+
+function createMiniHearts() {
+
+    const icons = [
+        "💗",
+        "💕",
+        "✨",
+        "🌸",
+        "🎀"
+    ];
+
+
+    for (
+        let i = 0;
+        i < 8;
+        i++
+    ) {
+
+        const heart =
+            document.createElement(
+                "div"
+            );
+
+
+        heart.innerText =
+            icons[
+                Math.floor(
+                    Math.random()
+                    * icons.length
+                )
+            ];
+
+
+        heart.style.position =
+            "fixed";
+
+
+        heart.style.left =
+            Math.random() * 100
+            + "vw";
+
+
+        heart.style.bottom = "0";
+
+        heart.style.fontSize = "25px";
+
+        heart.style.zIndex = "60000";
+
+        heart.style.pointerEvents =
+            "none";
+
+
+        heart.animate(
+            [
+                {
+                    transform:
+                        "translateY(0)",
+                    opacity: 1
+                },
+
+                {
+                    transform:
+                        `translateY(-${300 + Math.random()*300}px)`,
+                    opacity: 0
+                }
+            ],
+            {
+                duration: 1800,
+                easing: "ease-out"
+            }
+        );
+
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        setTimeout(() => {
+
+            heart.remove();
+
+        }, 2000);
+
+    }
+
+}
+
+
+/* =====================================================
+   POLAROID LIGHTBOX
+===================================================== */
+
+function openPhoto(card) {
+
+    const image =
+        card.querySelector("img");
+
+
+    const caption =
+        card.querySelector(
+            ".caption"
+        );
+
+
+    document.getElementById(
+        "largePhoto"
+    ).src = image.src;
+
+
+    document.getElementById(
+        "largeCaption"
+    ).innerText =
+        caption.innerText;
+
+
+    document.getElementById(
+        "photoLightbox"
+    ).classList.add(
+        "show"
+    );
+
+
+    createMiniHearts();
+
+}
+
+
+function closePhoto() {
+
+    document.getElementById(
+        "photoLightbox"
+    ).classList.remove(
+        "show"
+    );
+
+}
+
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closePhoto();
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   FLOATING DECORATIONS
+===================================================== */
+
+const floatingContainer =
+    document.getElementById(
+        "floatingContainer"
+    );
+
+
+const floatingItems = [
+
+    "💗",
+    "✨",
+    "🌸",
+    "⭐",
+    "💕",
+    "🎀",
+    "🦋"
+
+];
+
+
+for (
+    let i = 0;
+    i < 25;
+    i++
+) {
+
+    const item =
+        document.createElement(
+            "div"
+        );
+
+
+    item.className =
+        "floating";
+
+
+    item.innerText =
+        floatingItems[
+            Math.floor(
+                Math.random()
+                * floatingItems.length
+            )
+        ];
+
+
+    item.style.left =
+        Math.random() * 100
+        + "vw";
+
+
+    item.style.fontSize =
+        12 + Math.random() * 20
+        + "px";
+
+
+    item.style.animationDuration =
+        8 + Math.random() * 15
+        + "s";
+
+
+    item.style.animationDelay =
+        Math.random() * 10
+        + "s";
+
+
+    floatingContainer.appendChild(
+        item
+    );
+
+}
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+function updateCountdown() {
+
+    const now =
+        new Date();
+
+
+    let birthday =
+        new Date(
+            now.getFullYear(),
+            8,
+            7,
+            0,
+            0,
+            0
+        );
+
+
+    if (
+        now > birthday
+    ) {
+
+        birthday =
+            new Date(
+                now.getFullYear() + 1,
+                8,
+                7,
+                0,
+                0,
+                0
+            );
+
+    }
+
+
+    const difference =
+        birthday - now;
+
+
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60)
+        ) % 24;
+
+
+    const minutes =
+        Math.floor(
+            difference /
+            (1000 * 60)
+        ) % 60;
+
+
+    const seconds =
+        Math.floor(
+            difference / 1000
+        ) % 60;
+
+
+    document.getElementById(
+        "countdown"
+    ).innerHTML = `
+
+        <div class="time-box">
+
+            <strong>${days}</strong>
+
+            <small>
+                Days
+            </small>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong>${hours}</strong>
+
+            <small>
+                Hours
+            </small>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong>${minutes}</strong>
+
+            <small>
+                Minutes
+            </small>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong>${seconds}</strong>
+
+            <small>
+                Seconds
+            </small>
+
+        </div>
+
+    `;
+
+}
+
+
+updateCountdown();
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+/* =====================================================
+   PENGUIN
+===================================================== */
+
+document.getElementById(
+    "penguin"
+).addEventListener(
+    "click",
+    () => {
+
+        showToast(
+            "🐧 Saloni! Penguin says HAPPY BIRTHDAY! 🎂"
+        );
+
+        createMiniHearts();
+
+    }
+);
+
+
+/* =====================================================
+   SOUND EFFECT
+===================================================== */
+
+let audioContext;
+
+
+function playPopSound() {
+
+    try {
+
+        if (!audioContext) {
+
+            audioContext =
+                new (
+                    window.AudioContext ||
+                    window.webkitAudioContext
+                )();
+
+        }
+
+
+        const oscillator =
+            audioContext.createOscillator();
+
+
+        const gain =
+            audioContext.createGain();
+
+
+        oscillator.connect(gain);
+
+        gain.connect(
+            audioContext.destination
+        );
+
+
+        oscillator.frequency.value =
+            500;
+
+
+        gain.gain.setValueAtTime(
+            .15,
+            audioContext.currentTime
+        );
+
+
+        gain.gain.exponentialRampToValueAtTime(
+            .001,
+            audioContext.currentTime + .25
+        );
+
+
+        oscillator.start();
+
+
+        oscillator.stop(
+            audioContext.currentTime + .25
+        );
+
+    }
+
+    catch(error) {
+
+        console.log(
+            "Audio unavailable"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   FINAL CELEBRATION
+===================================================== */
+
+function celebrate() {
+
+    createConfetti(220);
+
+
+    for (
+        let i = 0;
+        i < 6;
+        i++
+    ) {
+
+        setTimeout(
+            createMiniHearts,
+            i * 250
+        );
+
+    }
+
+
+    showToast(
+        "🎉 HAPPY BIRTHDAY SALONI!!! 🎂💗✨"
+    );
+
+}
+
+
+/* =====================================================
+   SCROLL
+===================================================== */
+
+function scrollToSection(id) {
+
+    const section =
+        document.getElementById(id);
+
+
+    if (!section) {
+        return;
+    }
+
+
+    section.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
+```
